@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RandomNameGeneratorLibrary
+namespace RandomNameGeneratorNG
 {
     public interface IPlaceNameGenerator
     {

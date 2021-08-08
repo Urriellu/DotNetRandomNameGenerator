@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RandomNameGeneratorLibrary
+namespace RandomNameGeneratorNG
 {
     public class PlaceNameGenerator : BaseNameGenerator, IPlaceNameGenerator
     {

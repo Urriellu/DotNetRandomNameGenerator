@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNameGeneratorLibrary", "RandomNameGeneratorLibrary\RandomNameGeneratorLibrary.csproj", "{2AFC1F0D-6448-4775-A731-3377E3318E4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNameGeneratorUnitTests", "RandomNameGeneratorUnitTests\RandomNameGeneratorUnitTests.csproj", "{889E4245-EAC7-4D53-8A6C-9BC89F2CF475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F1BBD64-906B-436C-8881-BC33CB19908D}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+		UpgradeLog.htm = UpgradeLog.htm
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AFC1F0D-6448-4775-A731-3377E3318E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFC1F0D-6448-4775-A731-3377E3318E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFC1F0D-6448-4775-A731-3377E3318E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFC1F0D-6448-4775-A731-3377E3318E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889E4245-EAC7-4D53-8A6C-9BC89F2CF475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889E4245-EAC7-4D53-8A6C-9BC89F2CF475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889E4245-EAC7-4D53-8A6C-9BC89F2CF475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889E4245-EAC7-4D53-8A6C-9BC89F2CF475}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035D68BB-D6B3-408D-9F7E-2EE37B113D65}
+	EndGlobalSection
+EndGlobal

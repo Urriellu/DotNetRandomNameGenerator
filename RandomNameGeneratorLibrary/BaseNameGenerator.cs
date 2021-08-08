@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace RandomNameGeneratorLibrary
+namespace RandomNameGeneratorNG
 {
     public abstract class BaseNameGenerator
     {
-        private const string ResourcePathPrefix = "RandomNameGeneratorLibrary.Resources.";
+        private static readonly string ResourcePathPrefix = $"{nameof(RandomNameGeneratorNG)}.Resources.";
         protected readonly Random RandGen;
 
         protected BaseNameGenerator()
@@ -22,13 +22,8 @@ namespace RandomNameGeneratorLibrary
 
         private static Stream ReadResourceStreamForFileName(string resourceFileName)
         {
-#if NET40
-            return Assembly.GetExecutingAssembly()
-                    .GetManifestResourceStream(ResourcePathPrefix + resourceFileName);
-#else
-            return typeof(BaseNameGenerator).GetTypeInfo().Assembly
-                .GetManifestResourceStream(ResourcePathPrefix + resourceFileName);
-#endif
+            Assembly ass = typeof(BaseNameGenerator).GetTypeInfo().Assembly;
+            return ass.GetManifestResourceStream(ResourcePathPrefix + resourceFileName) ?? throw new Exception($"Resource '{resourceFileName}' not found. Resources available: {string.Join(", ", ass.GetManifestResourceNames())}");
         }
 
         protected static string[] ReadResourceByLine(string resourceFileName)
